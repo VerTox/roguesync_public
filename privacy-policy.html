@@ -1,0 +1,162 @@
+<title>RogueSync Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --ink: #1b2027;
+    --muted: #5a6472;
+    --line: #dde1e7;
+    --accent: #c4361f;
+    --sans: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a; --surface: #1a1e25; --ink: #e7eaef; --muted: #9aa3b0;
+      --line: #2c323c; --accent: #f06a4f; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a; --surface: #1a1e25; --ink: #e7eaef; --muted: #9aa3b0;
+    --line: #2c323c; --accent: #f06a4f; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans); }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 40px 20px 64px; display: grid; gap: 36px; }
+  header { display: grid; gap: 6px; }
+  .eyebrow { font: 600 12px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 0 0 8px; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .lang { display: flex; gap: 12px; font-size: 14px; }
+  .lang a { color: var(--accent); }
+  section { display: grid; gap: 4px; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2rem; display: grid; gap: 6px; }
+  .summary { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  .table-wrap { overflow-x: auto; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+  code, .addr { font-family: var(--mono); font-size: .92em; }
+  .addr { user-select: all; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 8px 0; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">RogueSync for iPhone</span>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 2 October 2026</p>
+    <nav class="lang"><a href="#en">English</a><a href="#ru">Русский</a></nav>
+  </header>
+
+  <div id="en" class="wrap" style="padding:0">
+    <p class="summary"><strong>In short:</strong> RogueSync has no accounts, no servers, no analytics and no ads. It does not collect, sell or share your data. Everything it stores stays on your iPhone.</p>
+
+    <section>
+      <h2>What the app does</h2>
+      <p>RogueSync connects your iPhone to your motorcycle's dashboard over Bluetooth, shows the song that is playing in Spotify or Apple Music on the dash, and lets the handlebar buttons control playback. RogueSync is an independent app. It is not affiliated with, authorized or endorsed by Honda or Spotify.</p>
+    </section>
+
+    <section>
+      <h2>What is stored on your iPhone</h2>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Data</th><th>Why</th><th>Where</th></tr>
+          <tr><td>Your saved bikes: the name you give them, the model, the Bluetooth identifier and the dashboard's series code</td><td>To reconnect to your bike</td><td>App storage on the device</td></tr>
+          <tr><td>The pairing key your bike issues</td><td>To reconnect without pairing again</td><td>iOS Keychain</td></tr>
+          <tr><td>The Spotify access token Spotify issues</td><td>To reconnect to the Spotify app</td><td>iOS Keychain</td></tr>
+          <tr><td>Your chosen music player</td><td>To remember your setting</td><td>App settings on the device</td></tr>
+          <tr><td>A diagnostic log of connection events</td><td>To troubleshoot connection problems</td><td>On the device only; shown in the app and copied only if you choose to</td></tr>
+        </table>
+      </div>
+      <p>None of this is sent to us or to anyone else. Deleting the app removes it.</p>
+    </section>
+
+    <section>
+      <h2>What leaves your iPhone</h2>
+      <ul>
+        <li><strong>To your motorcycle, over Bluetooth:</strong> the title, artist and play state of the current song, and the button assignments the dash needs.</li>
+        <li><strong>To Spotify:</strong> when you connect Spotify, the authorization happens in the Spotify app, and RogueSync controls playback through the Spotify app on your iPhone using Spotify's official SDK. Spotify's own privacy policy applies to your Spotify account.</li>
+      </ul>
+      <p>RogueSync makes no network requests of its own.</p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Bluetooth</strong>, to talk to the motorcycle, including in the background while you ride.</li>
+        <li><strong>Apple Music / Media Library</strong>, to read what is playing and control playback.</li>
+        <li><strong>Notifications</strong>, for a local reminder when Spotify needs reconnecting. These are generated on the device; nothing is sent from a server.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>RogueSync is not directed at children and collects no personal information from anyone.</p>
+    </section>
+
+    <section>
+      <h2>Changes and contact</h2>
+      <p>If this policy changes, the new version will be posted on this page with a new effective date. Questions: <span class="addr">vertoxone@gmail.com</span></p>
+    </section>
+  </div>
+
+  <hr>
+
+  <div id="ru" class="wrap" style="padding:0" lang="ru">
+    <p class="summary"><strong>Коротко:</strong> у RogueSync нет аккаунтов, серверов, аналитики и рекламы. Приложение не собирает, не продаёт и не передаёт ваши данные. Всё, что оно хранит, остаётся на вашем iPhone.</p>
+
+    <section>
+      <h2>Что делает приложение</h2>
+      <p>RogueSync подключает iPhone к приборной панели мотоцикла по Bluetooth, показывает на ней песню, которая играет в Spotify или Apple Music, и даёт управлять воспроизведением кнопками на руле. RogueSync — независимое приложение, не связанное с Honda или Spotify и не одобренное ими.</p>
+    </section>
+
+    <section>
+      <h2>Что хранится на iPhone</h2>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Данные</th><th>Зачем</th><th>Где</th></tr>
+          <tr><td>Сохранённые байки: заданное вами имя, модель, Bluetooth-идентификатор и серийный код панели</td><td>Чтобы переподключаться к байку</td><td>Хранилище приложения на устройстве</td></tr>
+          <tr><td>Ключ сопряжения, который выдаёт байк</td><td>Чтобы подключаться без повторного сопряжения</td><td>Связка ключей iOS</td></tr>
+          <tr><td>Токен доступа, который выдаёт Spotify</td><td>Чтобы переподключаться к приложению Spotify</td><td>Связка ключей iOS</td></tr>
+          <tr><td>Выбранный музыкальный плеер</td><td>Чтобы запомнить настройку</td><td>Настройки приложения на устройстве</td></tr>
+          <tr><td>Диагностический лог событий подключения</td><td>Для разбора проблем с подключением</td><td>Только на устройстве; виден в приложении и копируется, только если вы сами это сделаете</td></tr>
+        </table>
+      </div>
+      <p>Ничего из этого не отправляется ни нам, ни кому-либо ещё. При удалении приложения всё удаляется.</p>
+    </section>
+
+    <section>
+      <h2>Что покидает iPhone</h2>
+      <ul>
+        <li><strong>На мотоцикл по Bluetooth:</strong> название, исполнитель и состояние воспроизведения текущей песни, а также назначения кнопок, нужные панели.</li>
+        <li><strong>В Spotify:</strong> при подключении Spotify авторизация проходит в приложении Spotify, а RogueSync управляет воспроизведением через приложение Spotify на вашем iPhone с помощью официального SDK Spotify. К вашему аккаунту Spotify применяется политика конфиденциальности Spotify.</li>
+      </ul>
+      <p>Собственных сетевых запросов RogueSync не делает.</p>
+    </section>
+
+    <section>
+      <h2>Разрешения</h2>
+      <ul>
+        <li><strong>Bluetooth</strong> — для связи с мотоциклом, в том числе в фоне во время поездки.</li>
+        <li><strong>Apple Music / медиатека</strong> — чтобы видеть, что играет, и управлять воспроизведением.</li>
+        <li><strong>Уведомления</strong> — локальное напоминание, когда Spotify нужно переподключить. Уведомления создаются на устройстве, с сервера ничего не приходит.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Дети</h2>
+      <p>RogueSync не предназначено для детей и ни у кого не собирает персональные данные.</p>
+    </section>
+
+    <section>
+      <h2>Изменения и контакт</h2>
+      <p>Если политика изменится, новая версия появится на этой странице с новой датой вступления в силу. Вопросы: <span class="addr">vertoxone@gmail.com</span></p>
+    </section>
+  </div>
+</div>
